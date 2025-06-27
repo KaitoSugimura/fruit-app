@@ -12,15 +12,18 @@ To combat the CORS error, I set up a proxy server that calls the API from the pr
 You can see the proxy server working by going here:
 [proxy server](https://fruit-app-proxy-server.onrender.com/proxy)
 
-See [./src/server.ts](https://github.com/KaitoSugimura/fruit-app/blob/main/src/server.ts) for the server code 
+See [./src/server.ts](https://github.com/KaitoSugimura/fruit-app/blob/main/src/server.ts) for the server code
 
-## Assumptions 
+## Assumptions
 
-Due to the limited time, I assumed the website would only be viewed on a Desktop/Laptop computer. 
+Due to the limited time, I assumed the website would only be viewed on a Desktop/Laptop computer.
 The website is still responsive to a degree, but will most likely not look good on a mobile device.
 In a real environment, theres a few things that will need to be adjusted to fit those screens.
 
 ## Website functionality
+
+![alt text](Readme_images/MoveableMiddle.gif)
+Like in the image above, you can click and drag the middle line to change the width of the left and right panels.
 
 ![alt text](Readme_images/LeftSideTopBar.png)
 

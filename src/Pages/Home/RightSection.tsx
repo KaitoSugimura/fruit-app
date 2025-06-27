@@ -154,7 +154,8 @@ export default function RightSection() {
           ([fruitName, data]) =>
             (data.quantity || 0 > 0) && (
               <div key={fruitName} className={styles.fruitItem}>
-                {data.quantity} {fruitName}
+                {data.quantity} {fruitName} -{" "}
+                {(data.calories || 0) * (data.quantity || 0)} calories
               </div>
             )
         )}
