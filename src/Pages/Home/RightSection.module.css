@@ -1,0 +1,116 @@
+.rightSideRoot {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: var(--panel-background);
+  border: var(--border);
+  border-radius: 8px;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settingsContainer {
+  position: relative;
+}
+
+.settingsButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background-color: var(--action-background);
+  color: var(--action-text);
+  border: var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.settingsPopup {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  padding: 16px;
+  background-color: var(--panel-background);
+  border: var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsLabel {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.fruitJarRoot h2 {
+  margin-top: 0;
+  color: var(--primary-text);
+  padding-bottom: 8px;
+}
+
+.fruitList {
+  margin: 20px 0;
+}
+
+.fruitList h3 {
+  margin-bottom: 12px;
+  color: var(--primary-text);
+}
+
+.fruitItem {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  background-color: var(--card-background);
+  border: var(--border);
+  border-radius: 4px;
+  color: var(--primary-text);
+}
+
+.totalCalories {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: var(--accent-background);
+  border: var(--border);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--accent-text);
+  text-align: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttonsContainer:last-child {
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 100px;
+  padding: 4px 12px;
+  background-color: var(--action-background-faded);
+  color: var(--action-text);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button.activeButton {
+  background-color: var(--action-background);
+}

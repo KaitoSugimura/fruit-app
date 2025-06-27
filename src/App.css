@@ -1,0 +1,122 @@
+html {
+  --background-main: #cecece;
+  --primary-text: #1a1a1a;
+  --error-color: #ff4d4d;
+
+  --panel-background: #f1f1f1;
+  --panel-text: #1a1a1a;
+
+  --card-background: #ffffff;
+  --card-header-background: #f1f1f1;
+  --card-header-hover-background: #e8e8e8;
+  --card-text: #1a1a1a;
+
+  --action-background: #4981ca;
+  --action-secondary-background: #8b60b3;
+  --action-background-faded: #8b99b6;
+  --action-text: #ffffff;
+
+  --input-background: #d3dfed;
+  --input-text: #1a1a1a;
+
+  --external-link: #63acff;
+  --tab-outline: #5383e2;
+
+  --middle-line: #535a61;
+  --border: 1px solid #a9b4be;
+}
+
+[data-theme="dark"] {
+  --background-main: #1d2b39;
+  --primary-text: #ffffff;
+  --error-color: #ff4d4d;
+
+  --panel-background: #1d2b39;
+  --panel-text: #ffffff;
+
+  --card-background: rgb(34, 50, 63);
+  --card-header-background: #32485a;
+  --card-header-hover-background: #516b82;
+  --card-text: #ffffff;
+
+  --action-background: #2c9cdb;
+  --action-secondary-background: #8b60b3;
+  --action-background-faded: #8b99b6;
+  --action-text: #ffffff;
+
+  --input-background: #a9cdf8;
+  --input-text: #1a1a1a;
+
+  --middle-line: #3d5266;
+  --border: 1px solid #3d5266;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+button,
+input,
+select,
+html {
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+button {
+  background-color: var(--action-background);
+  color: var(--action-text);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.99);
+}
+
+button:active {
+  box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(0.99);
+  filter: brightness(0.85);
+}
+
+select {
+  padding: 8px;
+  background-color: var(--input-background);
+  color: var(--input-text);
+
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Loading {
+  background: linear-gradient(
+    90deg,
+    rgba(169, 169, 169, 0.3) 0%,
+    rgba(169, 169, 169, 0.3) 30%,
+    rgba(169, 169, 169, 0.5) 50%,
+    rgba(169, 169, 169, 0.3) 70%,
+    rgba(169, 169, 169, 0.3) 100%
+  );
+
+  background-size: 400%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  animation: loading 2s ease infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}

@@ -1,0 +1,79 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--panel-background);
+  color: var(--error-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.leftSectionRoot {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.homeRootLeftSideTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--panel-background);
+  border-radius: 8px;
+  border: var(--border);
+
+  margin-bottom: 16px;
+}
+
+.homeRootLeftSideDropDowns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.TopBarButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.listByButton {
+  padding: 8px;
+  background-color: var(--action-background-faded);
+  color: var(--action-text);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.listByButton.activeButton {
+  background-color: var(--action-background);
+}
+
+.fruitsListContainer {
+  flex: 1;
+  padding: 10px;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--panel-background);
+  border-radius: 8px;
+
+  border: var(--border);
+}
+
+.fruitsListScrollArea {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+  padding-right: 4px;
+}
+
+.addToJarButton {
+  background-color: var(--action-secondary-background);
+  height: 32px;
+}

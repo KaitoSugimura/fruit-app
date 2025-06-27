@@ -1,0 +1,53 @@
+.collapsible {
+  margin-bottom: 16px;
+  border: var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+
+  color: var(--card-text);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--card-header-background);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+
+  user-select: none;
+}
+
+.header:hover {
+  background-color: var(--card-header-hover-background);
+}
+
+.header:hover:has(.actions:hover) {
+  background-color: var(--card-header-background);
+}
+
+.title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 12px;
+  opacity: 0.75;
+  transition: transform 0.2s ease;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.content {
+  padding: 16px;
+  background-color: var(--card-background);
+}

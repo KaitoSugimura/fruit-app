@@ -1,0 +1,35 @@
+.homeRoot {
+  display: flex;
+  background-color: var(--background-main);
+
+  height: 100vh;
+}
+
+.middleResizer {
+  width: 11px;
+  background-color: transparent;
+  cursor: ew-resize;
+}
+
+.middleResizerLine {
+  width: 1px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--middle-line);
+}
+
+.middleResizer:hover .middleResizerLine,
+.middleResizer:active .middleResizerLine {
+  width: 7px;
+}
+
+.homeRootLeftSide {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+
+.homeRootRightSide {
+  flex: 1;
+  padding: 20px;
+}

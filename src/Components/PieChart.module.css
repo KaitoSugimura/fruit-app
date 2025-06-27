@@ -1,0 +1,14 @@
+.emptyPieChart {
+  margin: 96px 0;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.pieChartContainer {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.pieChartContainer h3 {
+  color: var(--primary-text);
+}
