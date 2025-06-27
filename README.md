@@ -9,6 +9,9 @@ The deployed website can be visited here:
 
 To combat the CORS error, I set up a proxy server that calls the API from the proxy server instead.
 
+You can see the proxy server working my going here:
+[proxy server](https://fruit-app-proxy-server.onrender.com/proxy)
+
 ## Website functionality
 
 ![alt text](Readme_images/LeftSideTopBar.png)
