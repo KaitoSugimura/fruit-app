@@ -1,7 +1,9 @@
 .errorContainer {
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   left: 40px;
+
+  z-index: 10;
 
   display: flex;
   align-items: center;

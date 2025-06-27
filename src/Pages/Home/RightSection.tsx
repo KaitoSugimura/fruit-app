@@ -64,7 +64,7 @@ export default function RightSection() {
             onClick={() => setShowSettings((prev) => !prev)}
           >
             <img
-              src="/Icons/settings.svg"
+              src="./Icons/settings.svg"
               alt="List view"
               width={20}
               height={20}

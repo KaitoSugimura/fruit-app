@@ -96,7 +96,7 @@ export default function LeftSection() {
             onClick={() => setListBy("list")}
           >
             <img
-              src="/Icons/list.svg"
+              src="./Icons/list.svg"
               alt="List view"
               width={20}
               height={20}
@@ -111,7 +111,7 @@ export default function LeftSection() {
             onClick={() => setListBy("table")}
           >
             <img
-              src="/Icons/table.svg"
+              src="./Icons/table.svg"
               alt="List view"
               width={20}
               height={20}

@@ -2,6 +2,17 @@
 
 Hello! This is my implementation of the Take Home exercise!
 
+The deployed website can be visited here:
+[fruit-app](https://kaitosugimura.github.io/fruit-app/)
+
+## Cors error
+
+To combat the CORS error, I first tried by creating a proxy server to fetch the API that way. But since I realized the server to server was not working either. I default back to fallback data.
+
+Upon errors, the website will show an error message with stub data.
+
+## Website functionality
+
 ![alt text](Readme_images/LeftSideTopBar.png)
 
 The image above shows the navigation bar on the left side of the screen. From left to right, here's what each one does:
