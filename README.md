@@ -11,7 +11,7 @@ To combat the CORS error, I set up a proxy server that calls the API from the pr
 
 You can see the proxy server working by going here:
 [proxy server](https://fruit-app-proxy-server.onrender.com/proxy)
-
+(The server is hosted on [render.com](https://render.com/))
 See [./src/server.ts](https://github.com/KaitoSugimura/fruit-app/blob/main/src/server.ts) for the server code 
 
 ## Assumptions 
