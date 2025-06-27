@@ -1,52 +1,12 @@
 .errorContainer {
-  position: fixed;
-  bottom: 40px;
-  left: 40px;
-
-  z-index: 10;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  height: 120px;
-  background-color: var(--card-background);
-
-  border: var(--border);
-  border-width: 2px;
-
+  height: 100%;
+  background-color: var(--panel-background);
   color: var(--error-color);
   padding: 20px;
   border-radius: 8px;
-
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.closeErrorButton {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-
-  background-color: transparent;
-  color: var(--primary-text);
-  border: none;
-  cursor: pointer;
-
-  width: 32px;
-  height: 32px;
-
-  font-size: 20px;
 }
 
 .leftSectionRoot {

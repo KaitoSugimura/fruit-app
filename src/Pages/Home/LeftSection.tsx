@@ -45,21 +45,18 @@ export default function LeftSection() {
     setGroups(groupedFruits);
   }, [fruits, groupBy]);
 
+  if (error) {
+    return (
+      <div className={styles.errorContainer}>
+        <p>
+          Error loading fruits: Unable to fetch fruits. Please try again later.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.leftSectionRoot}>
-      {/* In a real environment, this should probably be a modal or some sort of pop up from a library */}
-      {error && !closeError && (
-        <div className={styles.errorContainer}>
-          <button
-            className={styles.closeErrorButton}
-            onClick={() => setCloseError(true)}
-          >
-            x
-          </button>
-          <p>{error} - Displaying demo data to showcase app functionality</p>
-        </div>
-      )}
-
       <div className={styles.homeRootLeftSideTopBar}>
         <div className={styles.homeRootLeftSideDropDowns}>
           <select

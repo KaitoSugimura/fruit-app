@@ -7,9 +7,7 @@ The deployed website can be visited here:
 
 ## Cors error
 
-To combat the CORS error, I first tried by creating a proxy server to fetch the API that way. But since I realized the server to server was not working either. I default back to fallback data.
-
-Upon errors, the website will show an error message with stub data.
+To combat the CORS error, I set up a proxy server that calls the API from the proxy server instead.
 
 ## Website functionality
 
