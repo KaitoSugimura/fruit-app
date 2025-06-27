@@ -14,6 +14,12 @@ You can see the proxy server working by going here:
 
 See [./src/server.ts](https://github.com/KaitoSugimura/fruit-app/blob/main/src/server.ts) for the server code 
 
+## Assumptions 
+
+Due to the limited time, I assumed the website would only be viewed on a Desktop/Laptop computer. 
+The website is still responsive to a degree, but will most likely not look good on a mobile device.
+In a real environment, theres a few things that will need to be adjusted to fit those screens.
+
 ## Website functionality
 
 ![alt text](Readme_images/LeftSideTopBar.png)
