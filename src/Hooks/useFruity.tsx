@@ -17,18 +17,16 @@ export default function useFruity() {
           },
         });
 
-        if (res.ok) {
-          const data: Fruit[] = await res.json();
-          setFruits(data);
-          console.log("Successfully fetched from API");
-          return;
-        }
+        // if (res.ok) {
+        //   const data: Fruit[] = await res.json();
+        //   setFruits(data);
+        //   console.log("Successfully fetched from API");
+        //   return;
+        // }
 
         console.warn("Direct fetch failed, using proxy");
 
-        res = await fetch(
-          "http://localhost:3001/proxy?url=https://fruity-proxy.vercel.app/api/fruits"
-        );
+        res = await fetch("http://localhost:3001/proxy");
 
         if (res.ok) {
           const data: Fruit[] = await res.json();

@@ -10,17 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/proxy", async (req: any, res: any) => {
-  const targetUrl = req.query.url;
-
-  if (!targetUrl) {
-    return res.status(400).json({ error: "Missing ?url=" });
-  }
-
   try {
-    const response = await fetch(targetUrl, {
+    const response = await fetch("https://fruity-proxy.vercel.app/api/fruits", {
       method: req.method,
       headers: {
-        ...req.headers,
         // Spoof Origin
         origin: "https://localhost:5174",
         "x-api-key": "fruit-api-challenge-2025",

@@ -23,7 +23,6 @@ export default function LeftSection() {
     decrementJarFruitQuantity,
   } = useFruitJarContext();
   const { colorTheme, setColorTheme } = useColorThemeContext();
-  const [closeError, setCloseError] = useState(false);
 
   const [groups, setGroups] = useState<{
     [groupName: string]: Fruit[];
