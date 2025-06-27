@@ -10,7 +10,7 @@ export default function useFruity() {
     const fetchFruits = async () => {
       try {
         // Attempt to fetch from the real API
-        let res = await fetch("https://fruity-proxy.vercel.app/api/fruits", {
+        const res = await fetch("https://fruity-proxy.vercel.app/api/fruits", {
           headers: {
             Origin: "https://localhost:5174",
             "x-api-key": "fruit-api-challenge-2025",
@@ -23,25 +23,32 @@ export default function useFruity() {
           console.log("Successfully fetched from API");
           return;
         }
-
+      } catch (err) {
         console.warn("Direct fetch failed, using proxy");
 
-        res = await fetch("https://fruit-app-proxy-server.onrender.com/proxy");
+        try {
+          const resAttempt2 = await fetch(
+            "https://fruit-app-proxy-server.onrender.com/proxy"
+          );
 
-        if (res.ok) {
-          const data: Fruit[] = await res.json();
-          setFruits(data);
-          console.log("Successfully fetched from Proxy");
-          return;
+          if (resAttempt2.ok) {
+            const data: Fruit[] = await resAttempt2.json();
+            setFruits(data);
+            console.log("Successfully fetched from Proxy");
+            return;
+          }
+
+          console.warn(`Proxy server unavailable (${resAttempt2.status})`);
+          setError(
+            `Unable to load fruit data - The proxy server has blocked the request`
+          );
+        } catch (err) {
+          // Network error or server error, will just default to network error
+          console.warn("API and proxy server both failed: ", err);
+          setError(
+            "Unable to load fruit data - Both the API and proxy server failed the request."
+          );
         }
-
-        // API blocked
-        console.warn(`API blocked (${res.status})`);
-        setError(`API blocked (${res.status})`);
-      } catch (err) {
-        // Network error or server error, will just default to network error
-        console.warn("Network error:", err);
-        setError("Network error");
       } finally {
         setLoading(false);
       }

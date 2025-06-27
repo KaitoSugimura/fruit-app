@@ -48,7 +48,9 @@ export default function LeftSection() {
     return (
       <div className={styles.errorContainer}>
         <p>
-          Error loading fruits: Unable to fetch fruits. Please try again later.
+          {error} <br />
+          <br />
+          Please try again later.
         </p>
       </div>
     );
