@@ -1,7 +1,7 @@
 import type { Fruit } from "../Types/Fruit";
 import styles from "./FruitsList.module.css";
 import FruitQuantityAdjuster from "./FruitQuantityAdjuster";
-import type { ListByType } from "../Pages/Home";
+import type { ListByType } from "../Pages/Home/LeftSection";
 
 interface Props {
   fruitsToList: Fruit[];
