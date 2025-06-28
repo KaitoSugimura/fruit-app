@@ -5,6 +5,9 @@ Hello! This is my implementation of the Take Home exercise!
 The deployed website can be visited here:
 [fruit-app](https://kaitosugimura.github.io/fruit-app/)
 
+> [!NOTE]  
+> Since I use the free tier for the proxy server I set up, you might need to wait or reload a couple of times before you see a list.
+
 ## Cors error
 
 To combat the CORS error, I set up a proxy server that calls the API from the proxy server instead.
